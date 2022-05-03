@@ -1,4 +1,4 @@
-@media screen and (max-width: 515px) {
+@media screen and (max-width:400px) {
     header {
         height: auto;
     }
@@ -12,7 +12,7 @@
         width: 2rem;
         height: 2rem;
         background: #fff;
-        padding: .5rem;
+        padding: 0.5rem;
         border-radius: 5px;
         margin: 1rem;
     }
@@ -26,14 +26,14 @@
         top: 100%;
         width: 100%;
         left: 0;
-        background: rgba(255, 255, 255, .8);
+        background: rgba(255, 255, 255, 0.8);
     }
 
     header.open .popup a {
         display: block;
         text-align: center;
         color: black;
-        margin: 10px 0;
+        margin:10px 0;
     }
 
     #grid {
@@ -41,14 +41,47 @@
     }
 }
 
-/* TABLET */
-
-@media screen and (max-width:1280px) {
-    .photo p {
-        font-size: 1.2rem;
+@media screen and (max-width:700px) and (orientation:landscape) {
+    header {
+        height: auto;
+        padding: 10px;
     }
 
-    header a {
-        font-size: 1.2rem;
+    header a{
+        font-size: 25px;
+    }    
+
+    .photo {
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    header a{
+        font-size: 25px;
+    }    
+}
+
+@media screen and (max-width:1100px) and (orientation:landscape) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    header a{
+        font-size: 27px;
+    }    
+
+    h1 {
+        margin-left: 5%;
+    }
+
+    .photo {
+        margin-left: 10%;
     }
 }
